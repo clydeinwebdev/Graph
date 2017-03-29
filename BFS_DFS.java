@@ -90,7 +90,7 @@ public class BFS_DFS {
     //Depth First Search implements Stack ADT
     public static void dfs(int[][] G, int start, int V, String[] vertices){
         boolean[] visited = new boolean[V];
-        Stack stack = new Stack();
+        Stack<Integer> stack = new Stack<Integer>();
         int vertex = start;
         stack.push(vertex);
         visited[vertex] = true;
